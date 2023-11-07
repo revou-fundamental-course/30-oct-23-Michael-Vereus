@@ -1,0 +1,64 @@
+#headbar{
+    display: flex;
+    justify-content: space-between;
+    color-scheme: rgb(231, 216, 47);
+}
+#logo {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 500% ;
+}
+.Navbar{
+    text-align: center;
+    padding: 12px;
+    font-size: 250%;
+    color: black;
+    gap: 10px;
+}
+.Navbar>a{
+    text-decoration: none;
+}
+#nav1{
+    color: black;
+}
+#nav2{
+    color:black;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    margin-left: 16px;;
+    margin-right: 1000px;
+}
+label{
+    margin-bottom: 4px;
+    font-size: 24px;
+}
+input{
+    outline: none;
+    border: solid palegreen;
+    padding: 10px;
+    border-radius: 16px;
+}
+.btns{
+    margin-top: 7px;
+    justify-content:space-between ;
+}
+button{
+    margin-top: 16px;
+    background-color: blue;
+    color: palegoldenrod;
+    border: none;
+    border-radius: 16px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: lightblue;
+    color: blue;
+}
+button:active{
+    transform: translateY(3px);
+}
+
