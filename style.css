@@ -1,64 +1,133 @@
-#headbar{
-    display: flex;
-    justify-content: space-between;
-    color-scheme: rgb(231, 216, 47);
-}
-#logo {
-    text-align: center;
-    margin-top: 24px;
-    font-size: 500% ;
-}
-.Navbar{
-    text-align: center;
-    padding: 12px;
-    font-size: 250%;
-    color: black;
-    gap: 10px;
-}
-.Navbar>a{
-    text-decoration: none;
-}
-#nav1{
-    color: black;
-}
-#nav2{
-    color:black;
-}
-.inputs{
-    display: flex;
-    flex-direction: column;
-    margin-top: 36px;
-    margin-left: 16px;;
-    margin-right: 1000px;
-}
-label{
-    margin-bottom: 4px;
-    font-size: 24px;
-}
-input{
-    outline: none;
-    border: solid palegreen;
-    padding: 10px;
-    border-radius: 16px;
-}
-.btns{
-    margin-top: 7px;
-    justify-content:space-between ;
-}
-button{
-    margin-top: 16px;
-    background-color: blue;
-    color: palegoldenrod;
-    border: none;
-    border-radius: 16px;
-    padding: 4px 10px;
-    cursor: pointer;
-}
-button:hover{
-    background-color: lightblue;
-    color: blue;
-}
-button:active{
-    transform: translateY(3px);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+  --underweight: rgb(226, 154, 19);
+  --normal: rgb(77, 236, 77);
+  --overweight: rgb(224, 123, 123);
+  --obese: rgb(248, 13, 13) ;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  background: rgb(61, 155, 143);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 420px;
+  background: palegoldenrod;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 16px 21px rgba(0, 0, 0, 0.25);
+  display: grid;
+  gap: 1rem;
+}
+
+.calculator {
+  display: grid;
+  gap: 1rem;
+}
+
+.calculator div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calculator label {
+  flex: 0 1 120px;
+  font-weight: 600;
+}
+
+.calculator input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  outline-color: #555;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.calculator button {
+  width: 50%;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background: #00a1a3;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.calculator button[type="reset"] {
+  background: #444;
+}
+
+.calculator button:hover {
+  filter: brightness(120%);
+}
+
+.calculator button:active {
+  background : palegoldenrod ;
+  color: #00a1a3;
+} 
+
+.output {
+  text-align: center;
+}
+
+.output #bmi {
+  font-size: 4rem;
+}
+
+.output #desc strong {
+  text-transform: uppercase;
+}
+
+.bmi-scale {
+  display: flex;
+}
+
+.bmi-scale div {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 5px solid var(--color);
+  padding: 10px;
+}
+
+.bmi-scale h4 {
+  font-size: 0.75rem;
+  color: slategray;
+}
+
+.underweight {
+  color: var(--underweight);
+}
+
+.healthy {
+  color: var(--normal);
+}
+
+.overweight {
+  color: var(--overweight);
+}
+
+.obese {
+  color: var(--obese);
+}
