@@ -10,7 +10,10 @@ function onFormReset() {
   bmiText.className = "";
   descText.textContent = "N/A";
 }
+function runme(){
+  alert("If your BMI value is above 30 then you certainly are a GYATTTT :O"); 
 
+}
 function onFormSubmit(e) {
   e.preventDefault();
 

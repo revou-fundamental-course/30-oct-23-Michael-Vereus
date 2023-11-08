@@ -13,9 +13,24 @@
   margin: 0;
   font-family: "Jost", sans-serif;
 }
-
+#nvbtn {
+  width: 250px ;
+  height:50px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  background: #B0A695;
+  color: #EBE3D5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#nvbtn:hover{
+  background: red;
+  color:#F3EEEA;
+  filter: brightness(200%);
+}
 body {
-  background: rgb(61, 155, 143);
+  background: #776B5D;
   display: grid;
   place-items: center;
   height: 100vh;
